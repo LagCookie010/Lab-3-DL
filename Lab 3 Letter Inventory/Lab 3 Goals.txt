@@ -1,0 +1,4 @@
+Lab 3 Goals:
+
+ - InventoryLetter.java that can keeps track of how many letters are in a *String*
+- 
