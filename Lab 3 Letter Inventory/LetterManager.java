@@ -6,9 +6,9 @@ public class LetterManager {
 
 
 
-    public  void CharMoniker(){
-        char[] letterName = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-        int[] letterAmount = {0};
+    public LetterManager(int number, char currentLScan){
+        char[] letterName = {currentLScan};
+        int[] letterAmount = {number};
 
 
         for(int count = 0; count < 26; count++) {
@@ -17,4 +17,26 @@ public class LetterManager {
 
     }
 }
+
+
+
+
+    public LetterInventory LetterManager(int number, char currentLScan) {
+        char[] letterName = {currentLScan};
+        int[] letterAmount = {number};
+
+
+        for(int count = 0; count < 26; count++) {
+ 
+            new LetterInventory(letterAmount[1], letterName[count]);
+
+
+        throw new UnsupportedOperationException("Unimplemented method 'LetterManager'");
+    }
+
+
+
+
+}
+
 }

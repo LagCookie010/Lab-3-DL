@@ -21,15 +21,14 @@ public class LetterInventory {
     }
 
 
-    public char charIdentity(){
-    return letterName;
+    public String toString(){
+
+
+    return "/" + letterName + "/ = /" + letterAmount + "/";
 
 }
 
-    public int charAmount(){
-        return letterAmount;
 
-    }
     
     
 }// end of LetterInventory

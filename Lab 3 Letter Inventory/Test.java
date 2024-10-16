@@ -12,8 +12,9 @@ import java.util.Scanner;
 public class Test {
 
     public static final int Alphabet = 26;
+    static LetterManager word;
+    static LetterInventory[] wordInventory = new LetterInventory[Alphabet];
 
-    LetterInventory[] Inventory = new LetterInventory[Alphabet];
 
 
 
@@ -25,6 +26,7 @@ public class Test {
 
     System.out.println("Please input a word to count.");
             String text = input.nextLine();
+            
 
     int Currentletter = 1;
 
@@ -32,23 +34,28 @@ public class Test {
         int number = 0;
     
     char currentLScan = LetterChecker(Currentletter);
-  
 
     for(int i = 0;  i < text.length(); i ++){
 
             char letter = text.charAt(i);
-            
+            letter = Character.toLowerCase(letter);
 
             if (letter == currentLScan){
                 number++;
             }
 
 
+
+
     }// loop word
 
     if (number > 0 ) {
         System.out.print(currentLScan + " = " + number);
-        System.out.println("");}
+        System.out.println("");
+        System.out.println();
+    }
+    wordInventory[Currentletter] = word.LetterManager(number, currentLScan);
+
     Currentletter++;
 
 
